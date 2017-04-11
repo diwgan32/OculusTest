@@ -8,19 +8,25 @@ public class KeyControl : MonoBehaviour {
 
 	}
 	void FixedUpdate() {
-		if (Input.GetKeyDown ("a")) {
+		if (Input.GetKeyDown (gameObject.name)) {
 			StartCoroutine (handle());
+		}/*
+		if (Input.GetKeyUp ("a")) {
+			StartCoroutine (handleUp ());
 		}
-
+*/
 		//rb.AddForce(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")));
 	}
 
 	IEnumerator handle(){
-		transform.localScale = new Vector3 (1, 0.25f, 1);
-		transform.Translate (Vector3.down * .5f);
+		
+		transform.Translate (Vector3.back * 1f);
 		yield return new WaitForSecondsRealtime (.05f);
-		transform.localScale = new Vector3 (1, 0.5f, 1);
-		transform.Translate (Vector3.up * .5f);
-	}
+		transform.Translate (Vector3.forward * 1f);
+	}/*
+	IEnumerator handleUp(){
+
+		transform.Translate (Vector3.forward * 1f);
+*/
 
 }

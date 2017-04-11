@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/KeyControl.cs">
     <Files>
-      <File FileName="Assets/Scripts/KeyControl.cs" Line="12" Column="28" />
+      <File FileName="Assets/Scripts/KeyControl.cs" Line="25" Column="46" />
+      <File FileName="Assets/Scripts/KeyControl_1.cs" Line="5" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
